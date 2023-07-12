@@ -1,0 +1,48 @@
+.title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.3%;
+  letter-spacing: 8px;
+  color: var(--darkblue);
+  @media (max-width: $mobileSmall) {
+    letter-spacing: 4px;
+  }
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+  line-height: 110.8%;
+  color: var(--blue);
+  position: relative;
+
+  &::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--blue);
+    position: absolute;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      &::after {
+        box-shadow: 0px 0px 0px 1px var(--blue);
+      }
+    }
+  }
+
+
+  img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0
+  }
+}

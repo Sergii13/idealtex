@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__pagination"></div>
+                    <div class="banner__arrows">
+                        <button class="banner__arrow banner__arrow_prev">
+                            <img src="@img/icons/arrow-left.svg" alt="">
+                        </button>
+                        <button class="banner__arrow banner__arrow_next">
+                            <img src="@img/icons/arrow-left.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="category__container">
+                <div class="category__head">
+                    <h2 class="title category__title">
+                        ЗАГАЛЬНІ КАТЕГОРІЇ
+                    </h2>
+                    <a href="" class="link">
+                        Показати всі <img src="@img/icons/arrow-link.svg" alt="">
+                    </a>
+                </div>
+                <div class="category__grid-layout">
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            ВСЕ ДЛЯ ШИТТЯ
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            БЛИСКАВКА, НИТКА, ҐУДЗИК
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            БЛИСКАВКА, НИТКА, ҐУДЗИК
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            ВСЕ ДЛЯ ШИТТЯ 1
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ 2
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            БЛИСКАВКА, НИТКА, ҐУДЗИК 3
+                        </h4>
+                    </a>
+                    <a href="" class="category-card">
+                        <div class="category-card__image-ibg">
+                            <img src="@img/main-img/category.png" alt="">
+                        </div>
+                        <h4 class="category-card__title">
+                            РУКОДІЛЛЯ І ТВОРЧІСТЬ 4
+                        </h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sale">
+            <div class="sale__container">
+                <div class="sale__head">
+                    <h2 class="title sale__title">
+                        АКЦІЙНІ ПРОПОЗИЦІЇ
+                    </h2>
+                    <a href="" class="link">
+                        Показати всі <img src="@img/icons/arrow-link.svg" alt="">
+                    </a>
+                </div>
+                <div class="sale__grid-layout">
+                    <div class="product-card">
+                        <div class="product-card__top">
+                            <div class="product-card__sale">
+                                %
+                            </div>
+                            <a href="" class="product-card__image-ibg">
+                                <img src="@img/main-img/product.png" alt="">
+                            </a>
+                            <div class="product-card__options options">
+
+                                <div class="options__item">
+                                    <input hidden id="o_2" class="options__input" type="radio" value="2"
+                                           name="option">
+                                    <label for="o_2" class="options__label"><span
+                                            class="options__info">уп <br/>
+100 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input checked hidden id="o_22" class="options__input" type="radio" value="2"
+                                           name="option">
+                                    <label for="o_22" class="options__label"><span
+                                            class="options__info">уп <br/>
+50 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="o_222" class="options__input" type="radio" value="2"
+                                           name="option">
+                                    <label for="o_222" class="options__label"><span
+                                            class="options__info">уп <br/>
+10 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    код 0008+ 000B
+                                </li>
+                                <li>Країна: Польща</li>
+                                <li>Залишок: 12</li>
+                            </ul>
+                            <h4 class="product-card__title">
+                                <a href="">
+                                    Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum
+                                    є, фактично, стандартною "рибою" аж з XVI
+                                </a>
+                            </h4>
+                            <ul class="product-card__list-info">
+                                <li>
+                                <span class="product-card__label">
+                                    Одиниць в уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                                    100 шт
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                   Ціна за од.
+                                </span>
+                                    <span class="product-card__value">
+                                    0,02 грн
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                 Ціна за уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                          2 грн
+                                </span>
+                                </li>
+                            </ul>
+                            <div class="product-card__price">
+                                Сума: <span>20 грн</span>
+                            </div>
+                        </div>
+                        <div class="product-card__bottom">
+                            <div class="product-card__row">
+                                <div data-quantity class="quantity">
+                                    <button data-quantity-minus type="button"
+                                            class="quantity__button quantity__button_minus">
+                                        <img src="@img/icons/minus.svg" alt=""></button>
+                                    <div class="quantity__input">
+                                        <input data-quantity-value autocomplete="off"
+                                               type="text" name="form[]" value="2"></div>
+                                    <button data-quantity-plus type="button"
+                                            class="quantity__button quantity__button_plus">
+                                        <img src="@img/icons/plus.svg" alt="">
+                                    </button>
+                                </div>
+                                <button class="product-card__button button-icon">
+                                    <img src="@img/icons/basket-white.svg" alt="">
+                                </button>
+                            </div>
+                            <div data-spollers class="product-card__spoller spoller-product">
+                                <details class="spoller-product__item">
+                                    <summary data-spoller class="spoller-product__button">
+                                        Знижки <img src="@img/icons/arrow-spoller.svg" alt="">
+                                    </summary>
+                                    <div class="spoller-product__body">
+                                        <div class="spoller-product__table-wrap">
+                                            <table class="spoller-product__table">
+                                                <thead class="spoller-product__thead">
+                                                <th class="spoller-product__th">
+                                                    Кільк-ть од. в уп.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за од.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за уп.
+                                                </th>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>25 шт</td>
+                                                    <td>5.2</td>
+                                                    <td>130</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5%</td>
+                                                    <td>4.72</td>
+                                                    <td>125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10%</td>
+                                                    <td>4.68</td>
+                                                    <td>117</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15%</td>
+                                                    <td>4.42</td>
+                                                    <td>110.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18%</td>
+                                                    <td>4.264</td>
+                                                    <td>106.6</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__top">
+                            <div class="product-card__sale">
+                                %
+                            </div>
+                            <a href="" class="product-card__image-ibg">
+                                <img src="@img/main-img/product.png" alt="">
+                            </a>
+                            <div class="product-card__options options">
+
+                                <div class="options__item">
+                                    <input hidden id="o_211" class="options__input" type="radio" value="2"
+                                           name="option2">
+                                    <label for="o_211" class="options__label"><span
+                                            class="options__info">уп <br/>
+100 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input checked hidden id="o_2222" class="options__input" type="radio" value="2"
+                                           name="option2">
+                                    <label for="o_2222" class="options__label"><span
+                                            class="options__info">уп <br/>
+50 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="o_32222" class="options__input" type="radio" value="2"
+                                           name="option2">
+                                    <label for="o_32222" class="options__label"><span
+                                            class="options__info">уп <br/>
+10 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    код 0008+ 000B
+                                </li>
+                                <li>Країна: Польща</li>
+                                <li>Залишок: 12</li>
+                            </ul>
+                            <h4 class="product-card__title">
+                                <a href="">
+                                    Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum
+                                    є, фактично, стандартною "рибою" аж з XVI
+                                </a>
+                            </h4>
+                            <ul class="product-card__list-info">
+                                <li>
+                                <span class="product-card__label">
+                                    Одиниць в уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                                    100 шт
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                   Ціна за од.
+                                </span>
+                                    <span class="product-card__value">
+                                    0,02 грн
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                 Ціна за уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                          2 грн
+                                </span>
+                                </li>
+                            </ul>
+                            <div class="product-card__price">
+                                Сума: <span>20 грн</span>
+                            </div>
+                        </div>
+                        <div class="product-card__bottom">
+                            <div class="product-card__row">
+                                <div data-quantity class="quantity">
+                                    <button data-quantity-minus type="button"
+                                            class="quantity__button quantity__button_minus">
+                                        <img src="@img/icons/minus.svg" alt=""></button>
+                                    <div class="quantity__input">
+                                        <input data-quantity-value autocomplete="off"
+                                               type="text" name="form[]" value="2"></div>
+                                    <button data-quantity-plus type="button"
+                                            class="quantity__button quantity__button_plus">
+                                        <img src="@img/icons/plus.svg" alt="">
+                                    </button>
+                                </div>
+                                <button class="product-card__button button-icon">
+                                    <img src="@img/icons/basket-white.svg" alt="">
+                                </button>
+                            </div>
+                            <div data-spollers class="product-card__spoller spoller-product">
+                                <details class="spoller-product__item">
+                                    <summary data-spoller class="spoller-product__button">
+                                        Знижки <img src="@img/icons/arrow-spoller.svg" alt="">
+                                    </summary>
+                                    <div class="spoller-product__body">
+                                        <div class="spoller-product__table-wrap">
+                                            <table class="spoller-product__table">
+                                                <thead class="spoller-product__thead">
+                                                <th class="spoller-product__th">
+                                                    Кільк-ть од. в уп.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за од.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за уп.
+                                                </th>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>25 шт</td>
+                                                    <td>5.2</td>
+                                                    <td>130</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5%</td>
+                                                    <td>4.72</td>
+                                                    <td>125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10%</td>
+                                                    <td>4.68</td>
+                                                    <td>117</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15%</td>
+                                                    <td>4.42</td>
+                                                    <td>110.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18%</td>
+                                                    <td>4.264</td>
+                                                    <td>106.6</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__top">
+                            <div class="product-card__sale">
+                                %
+                            </div>
+                            <a href="" class="product-card__image-ibg">
+                                <img src="@img/main-img/product.png" alt="">
+                            </a>
+                            <div class="product-card__options options">
+
+                                <div class="options__item">
+                                    <input hidden id="1o_2" class="options__input" type="radio" value="2"
+                                           name="option1">
+                                    <label for="1o_2" class="options__label"><span
+                                            class="options__info">уп <br/>
+100 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="2o_22" class="options__input" type="radio" value="2"
+                                           name="option1">
+                                    <label for="2o_22" class="options__label"><span
+                                            class="options__info">уп <br/>
+50 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input checked hidden id="2o_222" class="options__input" type="radio" value="2"
+                                           name="option1">
+                                    <label for="2o_222" class="options__label"><span
+                                            class="options__info">уп <br/>
+10 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    код 0008+ 000B
+                                </li>
+                                <li>Країна: Польща</li>
+                                <li>Залишок: 12</li>
+                            </ul>
+                            <h4 class="product-card__title">
+                                <a href="">
+                                    Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum
+                                    є, фактично, стандартною "рибою" аж з XVI
+                                </a>
+                            </h4>
+                            <ul class="product-card__list-info">
+                                <li>
+                                <span class="product-card__label">
+                                    Одиниць в уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                                    100 шт
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                   Ціна за од.
+                                </span>
+                                    <span class="product-card__value">
+                                    0,02 грн
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                 Ціна за уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                          2 грн
+                                </span>
+                                </li>
+                            </ul>
+                            <div class="product-card__price">
+                                Сума: <span>20 грн</span>
+                            </div>
+                        </div>
+                        <div class="product-card__bottom">
+                            <div class="product-card__row">
+                                <div data-quantity class="quantity">
+                                    <button data-quantity-minus type="button"
+                                            class="quantity__button quantity__button_minus">
+                                        <img src="@img/icons/minus.svg" alt=""></button>
+                                    <div class="quantity__input">
+                                        <input data-quantity-value autocomplete="off"
+                                               type="text" name="form[]" value="2"></div>
+                                    <button data-quantity-plus type="button"
+                                            class="quantity__button quantity__button_plus">
+                                        <img src="@img/icons/plus.svg" alt="">
+                                    </button>
+                                </div>
+                                <button class="product-card__button button-icon">
+                                    <img src="@img/icons/basket-white.svg" alt="">
+                                </button>
+                            </div>
+                            <div data-spollers class="product-card__spoller spoller-product">
+                                <details class="spoller-product__item">
+                                    <summary data-spoller class="spoller-product__button">
+                                        Знижки <img src="@img/icons/arrow-spoller.svg" alt="">
+                                    </summary>
+                                    <div class="spoller-product__body">
+                                        <div class="spoller-product__table-wrap">
+                                            <table class="spoller-product__table">
+                                                <thead class="spoller-product__thead">
+                                                <th class="spoller-product__th">
+                                                    Кільк-ть од. в уп.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за од.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за уп.
+                                                </th>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>25 шт</td>
+                                                    <td>5.2</td>
+                                                    <td>130</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5%</td>
+                                                    <td>4.72</td>
+                                                    <td>125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10%</td>
+                                                    <td>4.68</td>
+                                                    <td>117</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15%</td>
+                                                    <td>4.42</td>
+                                                    <td>110.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18%</td>
+                                                    <td>4.264</td>
+                                                    <td>106.6</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__top">
+                            <div class="product-card__sale">
+                                %
+                            </div>
+                            <a href="" class="product-card__image-ibg">
+                                <img src="@img/main-img/product.png" alt="">
+                            </a>
+                            <div class="product-card__options options">
+
+                                <div class="options__item">
+                                    <input hidden id="o_42" class="options__input" type="radio" value="2"
+                                           name="option4">
+                                    <label for="o_42" class="options__label"><span
+                                            class="options__info">уп <br/>
+100 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input checked hidden id="o_4422" class="options__input" type="radio" value="2"
+                                           name="option4">
+                                    <label for="o_4422" class="options__label"><span
+                                            class="options__info">уп <br/>
+50 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="o_33222" class="options__input" type="radio" value="2"
+                                           name="option4">
+                                    <label for="o_33222" class="options__label"><span
+                                            class="options__info">уп <br/>
+10 шт</span><span class="options__price">
+                                        0,02 грн
+                                    </span></label>
+                                </div>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    код 0008+ 000B
+                                </li>
+                                <li>Країна: Польща</li>
+                                <li>Залишок: 12</li>
+                            </ul>
+                            <h4 class="product-card__title">
+                                <a href="">
+                                    Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum
+                                    є, фактично, стандартною "рибою" аж з XVI
+                                </a>
+                            </h4>
+                            <ul class="product-card__list-info">
+                                <li>
+                                <span class="product-card__label">
+                                    Одиниць в уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                                    100 шт
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                   Ціна за од.
+                                </span>
+                                    <span class="product-card__value">
+                                    0,02 грн
+                                </span>
+                                </li>
+                                <li>
+                                    <div class="product-card__procent">
+                                        18%
+                                    </div>
+                                    <span class="product-card__label">
+                                 Ціна за уп.
+                                </span>
+                                    <span class="product-card__value blue">
+                          2 грн
+                                </span>
+                                </li>
+                            </ul>
+                            <div class="product-card__price">
+                                Сума: <span>20 грн</span>
+                            </div>
+                        </div>
+                        <div class="product-card__bottom">
+                            <div class="product-card__row">
+                                <div data-quantity class="quantity">
+                                    <button data-quantity-minus type="button"
+                                            class="quantity__button quantity__button_minus">
+                                        <img src="@img/icons/minus.svg" alt=""></button>
+                                    <div class="quantity__input">
+                                        <input data-quantity-value autocomplete="off"
+                                               type="text" name="form[]" value="2"></div>
+                                    <button data-quantity-plus type="button"
+                                            class="quantity__button quantity__button_plus">
+                                        <img src="@img/icons/plus.svg" alt="">
+                                    </button>
+                                </div>
+                                <button class="product-card__button button-icon">
+                                    <img src="@img/icons/basket-white.svg" alt="">
+                                </button>
+                            </div>
+                            <div data-spollers class="product-card__spoller spoller-product">
+                                <details class="spoller-product__item">
+                                    <summary data-spoller class="spoller-product__button">
+                                        Знижки <img src="@img/icons/arrow-spoller.svg" alt="">
+                                    </summary>
+                                    <div class="spoller-product__body">
+                                        <div class="spoller-product__table-wrap">
+                                            <table class="spoller-product__table">
+                                                <thead class="spoller-product__thead">
+                                                <th class="spoller-product__th">
+                                                    Кільк-ть од. в уп.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за од.
+                                                </th>
+                                                <th class="spoller-product__th">
+                                                    Ціна за уп.
+                                                </th>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>25 шт</td>
+                                                    <td>5.2</td>
+                                                    <td>130</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5%</td>
+                                                    <td>4.72</td>
+                                                    <td>125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10%</td>
+                                                    <td>4.68</td>
+                                                    <td>117</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15%</td>
+                                                    <td>4.42</td>
+                                                    <td>110.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18%</td>
+                                                    <td>4.264</td>
+                                                    <td>106.6</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="banner banner_bottom">
+            <div class="banner__container">
+                <div class="banner__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__image-ibg">
+                                <img src="@img/main-img/banner.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="text-block">
+            <div class="text-block__container">
+                <div class="text-block__image-ibg">
+                    <img src="@img/main-img/text-img.png" alt="">
+                </div>
+                <div class="text-block__content">
+                    <h4>Швейна фурнітура оптом зі складу в Києві - з 1995 року!</h4>
+
+                    <p> Більше 25 років ми займаємося великими поставками якісної імпортної швейної фурнітури, а також
+                        фурнітурою українських виробників. Вибираючи товар в нашому магазині, кожен покупець може купити
+                        оптом швейну фурнітуру, що задовольняє найвищим вимогам.</p>
+                    <p>
+                        Великий досвід і налагоджена логістика забезпечують нам можливість швидко і якісно обслужити
+                        покупця
+                        з будь-якого міста, незалежно від обсягу замовлення.
+                        Приємних покупок.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>
