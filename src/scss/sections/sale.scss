@@ -255,11 +255,11 @@
   &__body {
     position: absolute;
     background: #E5EFFD;
-    z-index: 2;
+    z-index: 3;
     content: '';
     background: var(--white);
     width: calc(100% + 4px);
-    top: calc(100% - 0px);
+    top: calc(100% - 1px);
     margin-top: -16px;
     left: -2px;
     border-radius: 0px 0px 8px 8px;
