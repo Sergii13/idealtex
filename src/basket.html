@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Кошик"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul class="breadcrumbs__list">
+                    <li>
+                        <a href="">
+                            Головна
+                        </a>
+                    </li>
+                    <li>
+                        <span>Кошик</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="basket">
+            <div class="basket__top">
+                <div class="basket__container">
+                    <h2 class="title basket__title">
+                        КОШИК
+                    </h2>
+                    <div class="basket__grid-layout">
+                        <div class="product-card product-card_basket">
+                            <div class="product-card__top">
+                                <a href="" class="product-card__image-ibg">
+                                    <img src="@img/main-img/product.png" alt="">
+                                </a>
+                                <ul class="product-card__list">
+                                    <li>
+                                        код 0008+ 000B
+                                    </li>
+                                </ul>
+                                <h4 class="product-card__title">
+                                    <a href="">
+                                        Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+                                        Lorem
+                                        Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                    </a>
+                                </h4>
+                                <div class="product-card__items">
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 100 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 50 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 10 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__bottom">
+                                <button class="button product-card__remove button button_remove">
+                                    <img src="@img/icons/trash.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card product-card_basket">
+                            <div class="product-card__top">
+                                <a href="" class="product-card__image-ibg">
+                                    <img src="@img/main-img/product.png" alt="">
+                                </a>
+                                <ul class="product-card__list">
+                                    <li>
+                                        код 0008+ 000B
+                                    </li>
+                                </ul>
+                                <h4 class="product-card__title">
+                                    <a href="">
+                                        Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+                                        Lorem
+                                        Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                    </a>
+                                </h4>
+                                <div class="product-card__items">
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 100 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div class="card-quantity__empty">
+                                                Немає в наявності
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 50 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 10 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__bottom">
+                                <button class="button product-card__remove button button_remove">
+                                    <img src="@img/icons/trash.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card product-card_basket">
+                            <div class="product-card__top">
+                                <a href="" class="product-card__image-ibg">
+                                    <img src="@img/main-img/product.png" alt="">
+                                </a>
+                                <ul class="product-card__list">
+                                    <li>
+                                        код 0008+ 000B
+                                    </li>
+                                </ul>
+                                <h4 class="product-card__title">
+                                    <a href="">
+                                        Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+                                        Lorem
+                                        Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                    </a>
+                                </h4>
+                                <div class="product-card__items">
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 100 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__empty-big">
+                                                <span>Відсутній</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 10 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__bottom">
+                                <button class="button product-card__remove button button_remove">
+                                    <img src="@img/icons/trash.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card product-card_basket">
+                            <div class="product-card__top">
+                                <a href="" class="product-card__image-ibg">
+                                    <img src="@img/main-img/product.png" alt="">
+                                </a>
+                                <ul class="product-card__list">
+                                    <li>
+                                        код 0008+ 000B
+                                    </li>
+                                </ul>
+                                <h4 class="product-card__title">
+                                    <a href="">
+                                        Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+                                        Lorem
+                                        Ipsum є, фактично, стандартною "рибою" аж з XVI
+                                    </a>
+                                </h4>
+                                <div class="product-card__items">
+                                    <div class="card-quantity">
+
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__empty-big">
+                                                <span>Відсутній</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 50 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__sale">
+                                                18%
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-quantity">
+                                        <div class="card-quantity__title">
+                                            уп 10 шт
+                                        </div>
+                                        <div class="card-quantity__wrap">
+                                            <div class="card-quantity__sale">
+                                                18%
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Ціна за уп.
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    1 грн
+                                                </div>
+                                            </div>
+                                            <div data-quantity class="quantity quantity_basket">
+                                                <button data-quantity-minus type="button"
+                                                        class="quantity__button quantity__button_minus">
+                                                    <img src="@img/icons/minus.svg" alt=""></button>
+                                                <div class="quantity__input">
+                                                    <input data-quantity-value autocomplete="off"
+                                                           type="text" name="form[]" value="2"></div>
+                                                <button data-quantity-plus type="button"
+                                                        class="quantity__button quantity__button_plus">
+                                                    <img src="@img/icons/plus.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-quantity__row">
+                                                <div class="card-quantity__label">
+                                                    Сума
+                                                </div>
+                                                <div class="card-quantity__value">
+                                                    0 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__bottom">
+                                <button class="button product-card__remove button button_remove">
+                                    <img src="@img/icons/trash.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__bottom">
+                <div class="basket__container">
+                    <div class="basket__bottom-wrap">
+                        <ul class="basket__list">
+                            <li>
+                                <div class="basket__label">
+                                    Оформити замовлення
+                                </div>
+                                <div class="basket__value green">
+                                    500 грн
+                                </div>
+                            </li>
+                            <li>
+                                <div class="basket__label">
+                                    Знижка зараз:
+                                </div>
+                                <div class="basket__value">
+                                    0%
+                                </div>
+                            </li>
+                            <li>
+                                <div class="basket__label">
+                                    До знижки 5% додайте товару на суму:
+                                </div>
+                                <div class="basket__value">
+                                    1000 грн
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="basket__button button button_green button_fw">
+                            Оформити замовлення
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

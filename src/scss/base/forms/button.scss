@@ -26,6 +26,16 @@
     }
   }
 
+  &_remove {
+    border-radius: 6px;
+    background: #FDD;
+    @media (hover: hover) {
+      &:hover {
+        background: #fac9c9;
+      }
+    }
+  }
+
   &._fw {
     width: 100%;
   }
