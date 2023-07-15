@@ -114,7 +114,7 @@ flsForms.formQuantity();
 /* Документація: https://template.fls.guru/template-docs/rabota-s-formami.html */
 
 flsForms.formFieldsInit({
-  viewPass: false,
+  viewPass: true,
   autoHeight: false,
 });
 

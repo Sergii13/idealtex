@@ -36,9 +36,23 @@
     }
   }
 
+  &_violet {
+    height: 64px;
+    background: #8098F9;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    @media (hover: hover) {
+      &:hover {
+        background: #6f8af8;
+      }
+    }
+  }
+
   &._fw {
     width: 100%;
   }
+
 }
 
 .button-icon {

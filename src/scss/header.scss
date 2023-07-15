@@ -159,6 +159,12 @@
   &__container {
   }
 
+  &__search-open {
+    @media (min-width: $mobile) {
+      display: none;
+    }
+  }
+
   &__catalog-button {
     display: inline-flex;
     align-items: center;

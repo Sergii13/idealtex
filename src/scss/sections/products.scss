@@ -24,6 +24,13 @@
     @media (max-width: $tablet) {
       gap: 42px 22px;
     }
+
+    &_sale {
+      gap: 42px;
+      @media (max-width: $tablet) {
+        gap: 42px 22px;
+      }
+    }
   }
 }
 
