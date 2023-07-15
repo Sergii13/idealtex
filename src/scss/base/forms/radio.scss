@@ -3,6 +3,34 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   // .options__item
+  &_2 {
+    gap: 30px;
+    @media (max-width: $tablet) {
+      gap: 20px;
+    }
+
+    .options__info {
+      font-size: 20px;
+      font-weight: 700;
+      @media (max-width: $mobileSmall) {
+        z-index: 16;
+      }
+    }
+
+    .options__price-pc {
+      color: var(--darkblue);
+      opacity: 0.5;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .options__price {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
   &__item {
     position: relative;
     cursor: pointer;
@@ -20,6 +48,11 @@
       background: var(--blue);
 
       & .options__info {
+        color: var(--grey);
+        opacity: 1;
+      }
+
+      & .options__price-pc {
         color: var(--grey);
         opacity: 1;
       }

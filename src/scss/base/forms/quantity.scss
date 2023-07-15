@@ -4,6 +4,38 @@
   width: 100%;
   display: flex;
   padding: 12px 16px;
+
+  &_2 {
+    padding: 0;
+    gap: 12px;
+    max-width: 143px;
+
+    .quantity__button_plus {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    .quantity__input {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: math.div(16, 16);
+      color: #000;
+
+      input {
+        color: #000;
+        text-align: right;
+        line-height: math.div(16, 16);
+        font-size: 16px;
+        font-weight: 500;
+        background: transparent;
+      }
+    }
+  }
+
   // .quantity__button
   &__button {
     flex: 0 0 24px;
