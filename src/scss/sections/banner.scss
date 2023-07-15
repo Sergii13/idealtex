@@ -3,9 +3,15 @@
 
   &_bottom {
     padding: 41px 0 41px;
+    @media (max-width: $mobile) {
+      padding: 30px 0;
+    }
   }
 
   &__container {
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
   }
 
   &__slider {
@@ -24,6 +30,10 @@
     overflow: hidden;
     box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.25);
     padding-bottom: percent(400, 1110);
+    @media (max-width: $mobile) {
+      padding-bottom: percent(358, 577);
+      border-radius: 0px;
+    }
   }
 
   &__pagination {
@@ -62,6 +72,12 @@
     transform: translateY(-50%);
     z-index: 2;
     width: 100%;
+    @media (max-width: $mobile) {
+      padding: 0 64px;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: 0 44px;
+    }
   }
 
   &__arrow {
@@ -73,7 +89,10 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
-
+    @media (max-width: $mobileSmall) {
+      width: 34px;
+      height: 34px;
+    }
     @media (hover: hover) {
       &:hover {
         opacity: 0.7;
