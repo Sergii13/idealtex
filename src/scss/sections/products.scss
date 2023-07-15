@@ -1,0 +1,29 @@
+.products {
+  padding: 64px 0;
+  @media (max-width: $tablet) {
+    padding: 56px 0;
+  }
+
+  &__container {
+  }
+
+  &__title {
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
+  }
+
+  &__grid-layout {
+    display: grid;
+    gap: 142px 42px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    @media (max-width: $tablet) {
+      gap: 42px 22px;
+    }
+  }
+}
+

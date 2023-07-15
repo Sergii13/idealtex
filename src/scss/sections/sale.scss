@@ -50,16 +50,25 @@
   border: 2px solid var(--grey, #BACCE5);
   background: #FFF;
   box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.15);
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-self: flex-start;
   padding: 16px 16px 0;
   transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
   @media (hover: hover) {
     &:hover {
       box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.25);
     }
+  }
+
+  &__not-count {
+    padding: 14px;
+    border-radius: 10px;
+    background: rgba(255, 44, 44, 0.05);
+    color: #FF2C2C;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 16px;
   }
 
   &__top {

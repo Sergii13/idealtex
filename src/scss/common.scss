@@ -80,3 +80,57 @@
     }
   }
 }
+
+.breadcrumbs {
+  padding: 37px 0;
+  background: var(--grey);
+  @media (max-width: $mobile) {
+    padding: 16px 0;
+  }
+
+  &__container {
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: auto;
+    @extend %hidescroll;
+    margin-right: -16px;
+    padding-right: 16px;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          width: 24px;
+          flex-shrink: 0;
+          display: inline-block;
+          position: relative;
+          height: 24px;
+          margin: 0 8px;
+          background: url('@img/icons/arrow-breadcrumbs.svg');
+        }
+      }
+    }
+
+    span {
+      color: var(--darkblue);
+    }
+
+    a {
+      color: var(--blue);
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (hover: hover) {
+        &:hover {
+          color: var(--darkblue);
+        }
+      }
+    }
+  }
+}
