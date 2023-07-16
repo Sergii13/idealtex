@@ -32,6 +32,15 @@ textarea {
 
   &._form-error {
   }
+
+  &_admin {
+    border: none;
+    border-radius: 8px;
+    border-bottom: 1px solid var(--grey);
+    background: rgba(50, 54, 87, 0.05);
+    height: 40px;
+    font-size: 16px;
+  }
 }
 
 .input[placeholder]:not([data-placeholder-nohiden]) {

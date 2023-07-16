@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Покупець"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header2.htm',{})
+    <main class="page">
+        <section class="admin">
+            <div class="admin__container">
+                <div class="admin__head">
+                    <h2 class="admin__title">
+                        Замовлення
+                    </h2>
+                    <a href="" class="button button_admin admin__button">
+                        <img src="@img/icons/plus2.svg" alt=""> Додати
+                    </a>
+                </div>
+                <div class="admin__row">
+                    <div class="admin__right">
+                        <div class="admin__search search-admin">
+                            <button class="search-admin__btn button button_admin">
+                                Пошук
+                            </button>
+                            <div class="search-admin__wrap">
+                                <form action="" class="search-admin__form">
+                                    <div class="search-admin__items">
+                                        <div class="search-admin__item">
+                                            <p class="search-admin__label">
+                                                Номер замовлення
+                                            </p>
+                                            <input type="text" class="input input_admin" name="search">
+                                        </div>
+                                        <div class="search-admin__item">
+                                            <p class="search-admin__label">
+                                                Прізвище
+                                            </p>
+                                            <input type="text" class="input input_admin" name="search">
+                                        </div>
+                                        <div class="search-admin__item">
+                                            <p class="search-admin__label">
+                                                Телефон
+                                            </p>
+                                            <input type="text" class="input input_admin" name="search">
+                                        </div>
+                                    </div>
+                                    <button class="search-admin__button button button_admin">
+                                        Знайти
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>
+                                <div class="checkbox_table">
+                                    <input data-checkbox-all id="c_1" data-error="Ошибка" class="checkbox__input"
+                                           type="checkbox"
+                                           value="1"
+                                           name="form[]">
+                                    <label for="c_1" class="checkbox__label"></label>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Дії
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Час створення
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Прізвище
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Ім’я
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Телефон
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Мессенджер
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Банк оплата
+                                </div>
+                            </th>
+                            <th>
+                                <div class="table__th-text">
+                                    Сума замовлення
+                                </div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="checkbox_table">
+                                    <input id="c_11" data-error="Ошибка" class="checkbox__input"
+                                           type="checkbox"
+                                           value="11"
+                                           name="form[]">
+                                    <label for="c_11" class="checkbox__label"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div data-action class="table__actions actions">
+                                    <button data-action-btn class="actions__btn button button_blue">
+                                        Дії
+                                    </button>
+                                    <ul data-action-items class="actions__list">
+                                        <li>
+                                            <a href="">
+                                                Редагувати
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Нульова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                PDF
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Рахунок
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Видаткова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Бухгалтерія
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Обробити
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Надислати на пошту
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="actions__remove" href="">
+                                                Видалити
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    2023.05.20
+                                    17:24:42
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Комаровський
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Абудалхман
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    0664822511
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    @telegram
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    123456
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    5000 грн
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox_table">
+                                    <input id="c_121" data-error="Ошибка" class="checkbox__input"
+                                           type="checkbox"
+                                           value="11"
+                                           name="form[]">
+                                    <label for="c_121" class="checkbox__label"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div data-action class="table__actions actions">
+                                    <button data-action-btn class="actions__btn button button_blue">
+                                        Дії
+                                    </button>
+                                    <ul data-action-items class="actions__list">
+                                        <li>
+                                            <a href="">
+                                                Редагувати
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Нульова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                PDF
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Рахунок
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Видаткова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Бухгалтерія
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Обробити
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Надислати на пошту
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="actions__remove" href="">
+                                                Видалити
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    2023.05.20
+                                    17:24:42
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Комаровський
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Абудалхман
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    0664822511
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    @telegram
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    123456
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    5000 грн
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox_table">
+                                    <input id="1c_11" data-error="Ошибка" class="checkbox__input"
+                                           type="checkbox"
+                                           value="11"
+                                           name="form[]">
+                                    <label for="1c_11" class="checkbox__label"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div data-action class="table__actions actions">
+                                    <button data-action-btn class="actions__btn button button_blue">
+                                        Дії
+                                    </button>
+                                    <ul data-action-items class="actions__list">
+                                        <li>
+                                            <a href="">
+                                                Редагувати
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Нульова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                PDF
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Рахунок
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Видаткова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Бухгалтерія
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Обробити
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Надислати на пошту
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="actions__remove" href="">
+                                                Видалити
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    2023.05.20
+                                    17:24:42
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Комаровський
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Абудалхман
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    0664822511
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    @telegram
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    123456
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    5000 грн
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox_table">
+                                    <input id="2c_11" data-error="Ошибка" class="checkbox__input"
+                                           type="checkbox"
+                                           value="11"
+                                           name="form[]">
+                                    <label for="2c_11" class="checkbox__label"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div data-action class="table__actions actions">
+                                    <button data-action-btn class="actions__btn button button_blue">
+                                        Дії
+                                    </button>
+                                    <ul data-action-items class="actions__list">
+                                        <li>
+                                            <a href="">
+                                                Редагувати
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Нульова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                PDF
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Рахунок
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Видаткова
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Бухгалтерія
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Обробити
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Надислати на пошту
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="actions__remove" href="">
+                                                Видалити
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    2023.05.20
+                                    17:24:42
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Комаровський
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    Абудалхман
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    0664822511
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    @telegram
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    123456
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table__td-text">
+                                    5000 грн
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

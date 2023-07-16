@@ -127,5 +127,94 @@ document.addEventListener("DOMContentLoaded", () => {
       bodyUnlock();
       document.querySelector(".open-catalog").classList.remove("open-catalog");
     }
+    if (e.target.closest(".search-admin__btn")) {
+      e.target.closest(".search-admin").classList.toggle("active-search-admin");
+    } else if (
+      !e.target.closest(".search-admin") &&
+      document.querySelector(".active-search-admin")
+    ) {
+      document
+        .querySelector(".active-search-admin")
+        .classList.remove("active-search-admin");
+    }
   });
+});
+const checkboxAll = document.querySelector("[data-checkbox-all]");
+
+if (checkboxAll) {
+  const allBtn = checkboxAll
+    .closest("table")
+    .querySelectorAll("tbody input[type=checkbox]");
+  checkboxAll.addEventListener("change", () => {
+    if (allBtn.length > 0) {
+      if (checkboxAll.checked) {
+        allBtn.forEach((item) => {
+          item.checked = true;
+        });
+      } else {
+        allBtn.forEach((item) => {
+          item.checked = false;
+        });
+      }
+
+      allBtn.forEach((item) => {
+        item.addEventListener("change", () => {
+          if (!item.checked) {
+            checkboxAll.checked = false;
+          }
+          const isChecked = Array.from(allBtn).findIndex(
+            (item) => item.checked === true
+          );
+        });
+      });
+    }
+  });
+}
+
+function check(btn, buttons) {
+  let valueRizn = parseInt(
+    window.innerHeight - btn.getBoundingClientRect().bottom
+  );
+  let offsetTop = btn.closest("td").offsetTop;
+  let offsetBottom =
+    btn.closest("table").offsetHeight - btn.closest("td").offsetTop;
+  buttons.style.maxHeight =
+    (offsetTop > offsetBottom ? offsetTop : offsetBottom) -
+    btn.offsetHeight +
+    "px";
+  let heightBtns = buttons.offsetHeight;
+  if (offsetTop < offsetBottom) {
+    return false;
+  }
+  return true;
+}
+
+document.addEventListener("click", (e) => {
+  let target = null;
+  let maxHeight = 0;
+  let parent = null;
+  if (e.target.closest("[data-action-btn]")) {
+    e.preventDefault();
+    target = e.target.closest("[data-action-btn]");
+    parent = target.closest("table");
+    let allActive = Array.from(
+      document.querySelectorAll("[data-action].active")
+    );
+    allActive = allActive.filter(
+      (item) => item !== target.closest("[data-action].active")
+    );
+    removeClasses(allActive, "active");
+    target.closest("[data-action]").classList.toggle("active");
+    const buttons = target
+      .closest("[data-action]")
+      .querySelector("[data-action-items]");
+    if (check(target, buttons)) {
+      target.closest("[data-action]").classList.add("top");
+    } else {
+      target.closest("[data-action]").classList.remove("top");
+    }
+  } else if (!e.target.closest("[data-action]")) {
+    const allActive = document.querySelectorAll("[data-action].active");
+    removeClasses(allActive, "active");
+  }
 });

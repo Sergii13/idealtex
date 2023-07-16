@@ -1,0 +1,126 @@
+.admin {
+  padding: 41px 0;
+
+  &__container {
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 17px;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 110.8%;
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+  }
+
+  &__button {
+    min-width: 183px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__right {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+  }
+
+  &__search {
+  }
+}
+
+
+.search-admin {
+  position: relative;
+
+  &__btn {
+    height: 48px;
+    min-width: 183px;
+  }
+
+  &__form {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 585px;
+    border-radius: 12px;
+    border: 1px solid var(--grey);
+    background: #FFF;
+    padding: 6px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    z-index: 3;
+    @media (max-width: $mobile) {
+      width: 300px;
+    }
+
+    .active-search-admin & {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+
+  &__label {
+    flex-shrink: 0;
+    font-weight: 500;
+    line-height: 110.8%;
+    padding: 0px 8px 11px;
+    border-bottom: 1px solid var(--grey);
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+
+  .input {
+    flex: 1 1 auto
+  }
+
+  &__button {
+    margin-left: auto;
+    width: 100%;
+    max-width: 183px;
+    display: flex;
+  }
+}

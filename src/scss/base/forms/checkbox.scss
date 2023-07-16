@@ -1,6 +1,19 @@
 .checkbox {
   position: relative;
 
+  &_table {
+    .checkbox__label {
+      &::before {
+        border-radius: 5px;
+        background: rgba(50, 54, 87, 0.05);
+        width: 24px;
+        height: 24px;
+        border: none;
+        flex: 0 0 24px;
+      }
+    }
+  }
+
   // .checkbox__input
   &__input {
     position: absolute;
@@ -13,7 +26,7 @@
     }
 
     &:checked + .checkbox__label:before {
-      background: url('@img/input-icons/check.svg') center /100% 100% no-repeat, #8098F9;
+      background: url('@img/input-icons/check.svg') center /80% 80% no-repeat, #8098F9;
     }
   }
 

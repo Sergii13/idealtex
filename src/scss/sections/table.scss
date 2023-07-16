@@ -1,0 +1,122 @@
+.table {
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 16px;
+    min-width: 1110px;
+
+    th, td {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 110.8%;
+      padding: 8px 12px;
+    }
+
+    tbody {
+      tr {
+        transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+        @media (hover: hover) {
+          &:hover {
+            background: rgba(186, 204, 229, 0.3);
+          }
+        }
+      }
+    }
+
+    th {
+      background: var(--grey);
+      text-align: center;
+
+      .checkbox__label {
+        &::before {
+          background: var(--white, #FAFCFF);
+        }
+      }
+
+    }
+  }
+
+  &__th-text {
+  }
+
+  &__actions {
+  }
+
+  &__td-text {
+  }
+}
+
+.actions {
+  position: relative;
+
+  &__btn {
+    min-width: 95px;
+  }
+
+  &__list {
+    padding: 6px 0;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 6px);
+    background: var(--grey);
+    border-radius: 8px;
+    background: var(--grey);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    width: 178px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--blue);
+    }
+
+    .top & {
+      top: auto;
+      bottom: calc(100% - 6px);
+    }
+
+    .active & {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+
+    li {
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+      }
+
+      a, button {
+        font-weight: 500;
+        color: #000;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 7px;
+        transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+
+        &.actions__remove {
+          color: #FF2C2C;
+        }
+
+        @media (hover: hover) {
+          &:hover {
+            color: var(--blue);
+          }
+        }
+      }
+    }
+
+  }
+
+
+}

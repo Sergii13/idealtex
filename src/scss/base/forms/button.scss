@@ -63,6 +63,35 @@
     }
   }
 
+  &_admin {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--blue);
+    min-height: 40px;
+    border-radius: 8px;
+    gap: 4px;
+    background: var(--grey);
+    @media (hover: hover) {
+      &:hover {
+        background: #9ec1f3;
+      }
+    }
+  }
+
+  &_blue {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    min-height: 40px;
+    border-radius: 8px;
+    background: var(--blue);
+    @media (hover: hover) {
+      &:hover {
+        background: #014eb4;
+      }
+    }
+  }
+
   &._fw {
     width: 100%;
   }
