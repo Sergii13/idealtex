@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Покупець"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+        <section class="user">
+            <div class="user__container">
+                <form action="#" class="user__form">
+                    <div class="user__block">
+                        <h2 class="user__title">
+                            Покупець
+                        </h2>
+                        <div class="user__grid-layout">
+                            <label class="input-item ">
+                                <span class="input-item__title">
+                                 Призвіще
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item ">
+                                <span class="input-item__title">
+                                Ім'я
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+                             Email <span>
+                                    (Не обов'язкове)
+                                </span>
+                                </span>
+
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+                         Телефон
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="user__block">
+                        <h2 class="user__title">
+                            Отримувач
+                        </h2>
+                        <div class="user__subtitle">
+                            Якщо отримувати буде інша людина, то вкажіть дані цієї людини
+                        </div>
+                        <div class="user__grid-layout">
+                            <label class="input-item ">
+                                <span class="input-item__title">
+                                Призвіще <span>(Не обов'язкове)</span>
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item ">
+                                <span class="input-item__title">
+                               Ім'я <span>(Не обов'язкове)</span>
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+               Телефон <span>(Не обов'язкове)</span>
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="user__block">
+                        <h2 class="user__title">
+                            Адреса пошти
+                        </h2>
+                        <div class="user__grid-layout">
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+                   Назва пошти
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+                    Область
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+Місто
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+Відділення
+                                </span>
+                                <input name="form" type="text" placeholder="" class="input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="user__block">
+                        <h2 class="user__title">
+                            Комунікація та оплата
+                        </h2>
+                        <div class="user__grid-layout">
+                            <label class="input-item ">
+                                <span class="input-item__title">
+Як з вами можна зв'язатися
+                                </span>
+                                <select name="form[]" class="form">
+                                    <option value=""></option>
+                                    <option value="1">Telegram</option>
+                                    <option value="2">Viber</option>
+                                    <option value="3">Немає нічого</option>
+                                </select>
+
+                            </label>
+                            <label class="input-item">
+                                <span class="input-item__title">
+        Який банк вам зручніше
+                                </span>
+                                <select name="form[]" class="form">
+                                    <option value=""></option>
+                                    <option value="1">Monobank</option>
+                                    <option value="2">Private24</option>
+                                  
+                                </select>
+
+                            </label>
+                            <label class="input-item w-100">
+                                <span class="input-item__title">
+Примітка <span>(Не обов'язкове)</span>
+                                </span>
+                                <textarea name="form" placeholder="" class="input"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="user__block">
+                        <h2 class="user__title user__title_grey">
+                            Ваш кошик
+                        </h2>
+                        <div class="user__table">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="user__table-label">
+                                            Вартість кошика (UAH)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user__table-value">
+                                            ₴16
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user__table-label">
+                                            Знижка
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user__table-value">
+                                            0%
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="user__table-label">
+                                            Загальна вартість (UAH)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="user__table-value">
+                                            ₴16
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button class="user__button button button_pink button">
+                        Замовити
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

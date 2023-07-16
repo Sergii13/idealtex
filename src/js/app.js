@@ -29,7 +29,7 @@ import * as flsFunctions from "./files/functions.js";
 /* Модуль зіркового рейтингу */
 // flsForms.formRating();
 /* Модуль роботи з select. */
-// import './libs/select.js'
+import "./libs/select.js";
 /* Модуль роботи з календарем */
 // import './files/forms/datepicker.js'
 /* (У роботі) Модуль роботи з масками.*/

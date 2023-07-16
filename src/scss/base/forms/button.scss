@@ -49,6 +49,20 @@
     }
   }
 
+  &_pink {
+    height: 60px;
+    border-radius: 20px;
+    background: #FC7B7B;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 24px;
+    @media (hover: hover) {
+      &:hover {
+        background: #f65a5a;
+      }
+    }
+  }
+
   &._fw {
     width: 100%;
   }
