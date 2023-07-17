@@ -109,6 +109,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const closePopup = document.querySelector(".popup-admin__close");
+  const closePopup2 = document.querySelector(".popup-admin__overlay");
+  if (closePopup && closePopup2) {
+    closePopup.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.documentElement.classList.remove("open-popup");
+    });
+    closePopup2.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.documentElement.classList.remove("open-popup");
+    });
+  }
+  const openPopup = document.querySelector("[data-open]");
+  if (openPopup) {
+    openPopup.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.documentElement.classList.add("open-popup");
+    });
+  }
+
   document.addEventListener("click", (e) => {
     if (
       !e.target.closest(".phone-header") &&

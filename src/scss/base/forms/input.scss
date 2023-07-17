@@ -60,6 +60,10 @@ textarea.input {
   @media (max-width: $mobile) {
     height: 220px;
   }
+
+  &_admin {
+    height: 117px;
+  }
 }
 
 .input-item {

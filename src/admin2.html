@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Редагування замовлення "
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header2.htm',{})
+    <main class="page">
+        <section class="admin">
+            <div class="admin__popup popup-admin">
+
+                <div class="popup-admin__overlay"></div>
+                <div class="popup-admin__content">
+                    <button class="popup-admin__close button-icon">
+                        <img src="@img/icons/close-blue.svg" alt="">
+                    </button>
+                    <div class="popup-admin__wrap">
+                        <div class="popup-admin__title">
+                            Редагування накладної від замовлення
+                        </div>
+                        <div class="popup-admin__subtitle">
+                            Продукти
+                        </div>
+                        <div class="popup-admin__table table">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Фото
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Товар
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Код
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Кількість В
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Ціна В
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Сума В
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Кількість С
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Ціна C
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table__th-text">
+                                            Сума C
+                                        </div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table__image-ibg">
+                                            <img src="@img/main-img/01.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234-23
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="table" class="input input_admin" value="123467">
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            12345678
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            123456
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234567
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table__image-ibg">
+                                            <img src="@img/main-img/01.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234-23
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="table" class="input input_admin" value="123467">
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            12345678
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            123456
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234567
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table__image-ibg">
+                                            <img src="@img/main-img/01.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234-23
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="table" class="input input_admin" value="123467">
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            12345678
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            123456
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234567
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table__image-ibg">
+                                            <img src="@img/main-img/01.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234-23
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="table" class="input input_admin" value="123467">
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            12345678
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            123456
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234567
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table__image-ibg">
+                                            <img src="@img/main-img/01.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234-23
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="table" class="input input_admin" value="123467">
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            12345678
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            123456
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table__td-text table__td-text_grey">
+                                            1234567
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="popup-admin__buttons">
+                            <a href="" class="button button_admin popup-admin__button">Обробити</a>
+                            <a href="" class="button button_admin popup-admin__button">Зберегти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin__container">
+                <div class="admin__head">
+                    <h2 class="admin__title">
+                        Редагування замовлення
+                    </h2>
+                    <button data-open href="" class="button button_admin admin__button">
+                        Створити накладну
+                    </button>
+                </div>
+                <form action="#" class="admin__correct correct-admin">
+                    <div class="correct-admin__items">
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Прізвище покупця
+                            </div>
+                            <input type="text" placeholder="" value="Прізвище покупця" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Ім’я покупця
+                            </div>
+                            <input type="text" placeholder="" value="Ім’я покупця" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item correct-item_changed">
+                            <div class="correct-item__label">
+                                Ім’я покупця
+                            </div>
+                            <input type="text" placeholder="" value="Ім’я покупця" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Пошта покупця
+                            </div>
+                            <input type="text" placeholder="" value="Пошта покупця" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Телефон покупця
+                            </div>
+                            <input type="text" placeholder="" value="Телефон покупця" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Прізвище отримувача
+                            </div>
+                            <input type="text" placeholder="" value="Прізвище отримувача" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Ім’я отримувача
+                            </div>
+                            <input type="text" placeholder="" value="Ім’я отримувача" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Телефон отримувача
+                            </div>
+                            <input type="text" placeholder="" value="Телефон отримувача" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Назва доставки
+                            </div>
+                            <input type="text" placeholder="" value="Назва доставки" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Область доставки
+                            </div>
+                            <input type="text" placeholder="" value="Область доставки" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Місто доставки
+                            </div>
+                            <input type="text" placeholder="" value="Місто доставки" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Офіс доставки
+                            </div>
+                            <input type="text" placeholder="" value="Офіс доставки" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Метод комунікації
+                            </div>
+                            <input type="text" placeholder="" value="Метод комунікації" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Метод оплати
+                            </div>
+                            <input type="text" placeholder="" value="Метод оплати" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Скидка
+                            </div>
+                            <input type="text" placeholder="" value="Скидка" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-admin__item correct-item">
+                            <div class="correct-item__label">
+                                Повідомлення покупця
+                            </div>
+                            <textarea class="input input_admin">Повідомлення покупця</textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="admin__product admin-product">
+                    <h2 class="admin-product__title">
+                        Продукти
+                    </h2>
+                    <div class="admin-product__head">
+                        <input type="text" placeholder="" value="Код товара" name="form"
+                               class="input input_admin">
+                        <a href="" class="button button_admin admin-product__button">
+                            <img src="@img/icons/plus2.svg" alt=""> додати продукт
+                        </a>
+                    </div>
+                    <div class="admin-product__table table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Фото
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Товар
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Код
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Кількість В
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Ціна В
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Сума В
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Кількість С
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Ціна C
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table__th-text">
+                                        Сума C
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <button class="table__delete">
+                                        <img src="@img/icons/trash.svg" alt="">
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="table__image-ibg">
+                                        <img src="@img/main-img/01.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234-23
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        12345678
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        123456
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="table__delete">
+                                        <img src="@img/icons/trash.svg" alt="">
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="table__image-ibg">
+                                        <img src="@img/main-img/01.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234-23
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        12345678
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        123456
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="table__delete">
+                                        <img src="@img/icons/trash.svg" alt="">
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="table__image-ibg">
+                                        <img src="@img/main-img/01.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234-23
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        12345678
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        123456
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="table__delete">
+                                        <img src="@img/icons/trash.svg" alt="">
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="table__image-ibg">
+                                        <img src="@img/main-img/01.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234-23
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        12345678
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        123456
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="table__delete">
+                                        <img src="@img/icons/trash.svg" alt="">
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="table__image-ibg">
+                                        <img src="@img/main-img/01.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234-23
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        12345678
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        123456
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="table__delete">
+                                        <img src="@img/icons/trash.svg" alt="">
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="table__image-ibg">
+                                        <img src="@img/main-img/01.png" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        Квітка Обробний Ф 9х9см Бордо Уп = 25 Шт
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234-23
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        12345678
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        123456
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__td-text table__td-text_grey">
+                                        1234567
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="admin-product__info-rows">
+                        <div class="admin-product__info-row">
+                            <div class="admin-product__column">
+                                Скидка
+                            </div>
+                            <div class="admin-product__column">
+                                15%
+                            </div>
+                        </div>
+                        <div class="admin-product__info-row">
+                            <div class="admin-product__column">
+                                Сума
+                            </div>
+                            <div class="admin-product__column">
+                                ₴16
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-product__row">
+                        <div class="admin-product__buttons">
+                            <button class="admin-product__button button button_admin">
+                                Обробити
+                            </button>
+                            <button class="admin-product__button button button_admin">
+                                Бухгалтерія
+                            </button>
+                        </div>
+                        <button class="admin-product__button button button_admin">
+                            Зберегти
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

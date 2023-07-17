@@ -18,6 +18,10 @@
       padding: 8px 12px;
     }
 
+    th {
+      height: 61px;
+    }
+
     tbody {
       tr {
         transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
@@ -42,6 +46,27 @@
     }
   }
 
+  &__delete {
+    border-radius: 6px;
+    background: #FDD;
+    padding: 4px;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    @media (hover: hover) {
+      &:hover {
+        background: #f6b2b2;
+      }
+    }
+  }
+
+  &__image-ibg {
+    border-radius: 9px;
+    overflow: hidden;
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+  }
+
   &__th-text {
   }
 
@@ -49,6 +74,11 @@
   }
 
   &__td-text {
+    &_grey {
+      border-radius: 5px;
+      background: rgba(50, 54, 87, 0.05);
+      padding: 8px;
+    }
   }
 }
 
