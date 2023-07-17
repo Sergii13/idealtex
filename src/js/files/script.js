@@ -239,3 +239,28 @@ document.addEventListener("click", (e) => {
     removeClasses(allActive, "active");
   }
 });
+
+const allFiles = document.querySelectorAll(".form-file__input");
+if (allFiles.length > 0) {
+  allFiles.forEach((fileInput) => {
+    const parent = fileInput.closest("label");
+    const imgPreview = parent.querySelector(".form-file__preview-ibg");
+    parent
+      .querySelector(".form-file__remove")
+      .addEventListener("click", (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        fileInput.value = "";
+        parent.classList.remove("fill");
+      });
+    fileInput.addEventListener("change", (e) => {
+      parent.classList.add("fill");
+      const [file] = fileInput.files;
+      if (file) {
+        imgPreview.innerHTML = `<img src="${URL.createObjectURL(
+          file
+        )}" alt="">`;
+      }
+    });
+  });
+}

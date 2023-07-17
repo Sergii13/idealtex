@@ -1,0 +1,145 @@
+.form-file {
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px dashed rgba(0, 0, 0, 0.25);
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    overflow: hidden;
+    min-height: 170px;
+    padding: 16px;
+    gap: 12px;
+    cursor: pointer;
+
+    &.fill {
+      border: none;
+
+      .form-file__remove {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .form-file__preview-ibg {
+        display: block;
+      }
+
+      .form-file__plus-icon {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0px 0px 10px var(--grey);
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__descr {
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__plus-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+  }
+
+  &__text {
+    color: #000;
+    font-family: var(--fontMontserrat);
+    font-size: 13px;
+    font-weight: 400;
+
+  }
+
+  &__link {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(15, 145, 210, 0.70);
+    background: #FBFDFE;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F91D2;
+    font-family: var(--fontMontserrat);
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    @media (hover: hover) {
+      &:hover {
+        background: var(--blue);
+        color: var(--white);
+      }
+    }
+  }
+
+  &__remove {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    padding: 4px;
+    border-radius: 6px;
+    background: #FDD;
+    @media (hover: hover) {
+      &:hover {
+        background: #faabab;
+      }
+    }
+  }
+
+  &__preview-ibg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__input {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    opacity: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  &__button {
+  }
+}

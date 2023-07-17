@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Сортування"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header2.htm',{})
+    <main class="page">
+        <section class="admin">
+            <div class="admin__container">
+                <div class="admin__head  mb-100">
+                    <h2 class="admin__title">
+                        Сортування
+                    </h2>
+                </div>
+                <div class="admin__sort sort-admin">
+                    <div class="sort-admin__row">
+                        <div class="sort-admin__column">
+                            <h2 class="sort-admin__title-big">
+                                Категорії
+                            </h2>
+                            <div class="sort-admin__scroll">
+                                <ul data-spollers class="sort-admin__list">
+                                    <li>
+                                        <details>
+                                            <summary class="sort-admin__title">
+                                                <span>  +</span> <span>НОВИНКИ</span>
+                                                <button class="sort-admin__btn">
+                                                    <img src="@img/icons/arrow-white.svg" alt="">
+                                                </button>
+                                            </summary>
+                                            <ul data-spollers class="sort-admin__list">
+                                                <li>
+                                                    <details>
+                                                        <summary class="sort-admin__title">
+                                                            <span>  +</span> <span>НОВИНКИ1</span>
+                                                            <button class="sort-admin__btn">
+                                                                <img src="@img/icons/arrow-white.svg" alt="">
+                                                            </button>
+                                                        </summary>
+                                                        <ul data-spollers class="sort-admin__list">
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>НОВИНКИ2</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>ВСЕ  ДЛЯ ШИТТЯ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>БЛИСКАВКА, НИТКА, ГУДЗИК</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary class="sort-admin__title">
+                                                <span>  +</span> <span>НОВИНКИ</span>
+                                                <button class="sort-admin__btn">
+                                                    <img src="@img/icons/arrow-white.svg" alt="">
+                                                </button>
+                                            </summary>
+                                            <ul data-spollers class="sort-admin__list">
+                                                <li>
+                                                    <details>
+                                                        <summary class="sort-admin__title">
+                                                            <span>  +</span> <span>НОВИНКИ1</span>
+                                                            <button class="sort-admin__btn">
+                                                                <img src="@img/icons/arrow-white.svg" alt="">
+                                                            </button>
+                                                        </summary>
+                                                        <ul data-spollers class="sort-admin__list">
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>НОВИНКИ2</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>ВСЕ  ДЛЯ ШИТТЯ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>БЛИСКАВКА, НИТКА, ГУДЗИК</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary class="sort-admin__title">
+                                                <span>  +</span> <span>НОВИНКИ</span>
+                                                <button class="sort-admin__btn">
+                                                    <img src="@img/icons/arrow-white.svg" alt="">
+                                                </button>
+                                            </summary>
+                                            <ul data-spollers class="sort-admin__list">
+                                                <li>
+                                                    <details>
+                                                        <summary class="sort-admin__title">
+                                                            <span>  +</span> <span>НОВИНКИ1</span>
+                                                            <button class="sort-admin__btn">
+                                                                <img src="@img/icons/arrow-white.svg" alt="">
+                                                            </button>
+                                                        </summary>
+                                                        <ul data-spollers class="sort-admin__list">
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>НОВИНКИ2</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>ВСЕ  ДЛЯ ШИТТЯ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>БЛИСКАВКА, НИТКА, ГУДЗИК</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary class="sort-admin__title">
+                                                <span>  +</span> <span>НОВИНКИ</span>
+                                                <button class="sort-admin__btn">
+                                                    <img src="@img/icons/arrow-white.svg" alt="">
+                                                </button>
+                                            </summary>
+                                            <ul data-spollers class="sort-admin__list">
+                                                <li>
+                                                    <details>
+                                                        <summary class="sort-admin__title">
+                                                            <span>  +</span> <span>НОВИНКИ1</span>
+                                                            <button class="sort-admin__btn">
+                                                                <img src="@img/icons/arrow-white.svg" alt="">
+                                                            </button>
+                                                        </summary>
+                                                        <ul data-spollers class="sort-admin__list">
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>НОВИНКИ2</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>ВСЕ  ДЛЯ ШИТТЯ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>БЛИСКАВКА, НИТКА, ГУДЗИК</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary class="sort-admin__title">
+                                                <span>  +</span> <span>НОВИНКИ</span>
+                                                <button class="sort-admin__btn">
+                                                    <img src="@img/icons/arrow-white.svg" alt="">
+                                                </button>
+                                            </summary>
+                                            <ul data-spollers class="sort-admin__list">
+                                                <li>
+                                                    <details>
+                                                        <summary class="sort-admin__title">
+                                                            <span>  +</span> <span>НОВИНКИ1</span>
+                                                            <button class="sort-admin__btn">
+                                                                <img src="@img/icons/arrow-white.svg" alt="">
+                                                            </button>
+                                                        </summary>
+                                                        <ul data-spollers class="sort-admin__list">
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>НОВИНКИ2</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>ВСЕ  ДЛЯ ШИТТЯ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>БЛИСКАВКА, НИТКА, ГУДЗИК</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary class="sort-admin__title">
+                                                <span>  +</span> <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                            </summary>
+                                            <ul data-spollers class="sort-admin__list">
+                                                <li>
+                                                    <details>
+                                                        <summary class="sort-admin__title">
+                                                            <span>  +</span> <span>НОВИНКИ1</span>
+                                                            <button class="sort-admin__btn">
+                                                                <img src="@img/icons/arrow-white.svg" alt="">
+                                                            </button>
+                                                        </summary>
+                                                        <ul data-spollers class="sort-admin__list">
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>НОВИНКИ2</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span> <span>ВСЕ  ДЛЯ ШИТТЯ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>ТКАНИНИ І ПРИКЛАДНІ МАТЕРІАЛИ</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                            <li>
+                                                                <details>
+                                                                    <summary class="sort-admin__title">
+                                                                        <span>  +</span>
+                                                                        <span>БЛИСКАВКА, НИТКА, ГУДЗИК</span>
+                                                                    </summary>
+                                                                </details>
+                                                            </li>
+                                                        </ul>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="sort-admin__column">
+                            <h2 class="sort-admin__title-big">
+                                Продукти
+                            </h2>
+                            <form action="#" class="search-header__form">
+                                <div class="search-header__item">
+                                <span class="search-header__icon">
+                                    <img src="@img/icons/search.svg" alt="">
+                                </span>
+                                    <input placeholder="Пошук" type="text" class="search-header__input input"/>
+                                    <button class="search-header__button">
+                                        Знайти
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="sort-admin__scroll">
+                                <ul data-spollers class="sort-admin__list gap-20">
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sort-admin__item">
+                                            <div class="sort-admin__name">
+                                                код 88888888888
+                                            </div>
+                                            <div class="sort-admin__image-ibg">
+                                                <img src="@img/main-img/01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort-admin__button-wrap">
+                        <a href="" class="sort-admin__button button button_admin">Зберегти</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

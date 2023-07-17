@@ -278,7 +278,9 @@ export function spollers() {
             spollerTitle.removeAttribute("tabindex");
             if (!spollerItem.hasAttribute("data-open")) {
               spollerItem.open = false;
-              spollerTitle.nextElementSibling.hidden = true;
+              if (spollerTitle.nextElementSibling) {
+                spollerTitle.nextElementSibling.hidden = true;
+              }
             } else {
               spollerTitle.classList.add("_spoller-active");
               spollerItem.open = true;
@@ -287,7 +289,9 @@ export function spollers() {
             spollerTitle.setAttribute("tabindex", "-1");
             spollerTitle.classList.remove("_spoller-active");
             spollerItem.open = true;
-            spollerTitle.nextElementSibling.hidden = false;
+            if (spollerTitle.nextElementSibling) {
+              spollerTitle.nextElementSibling.hidden = false;
+            }
           }
         });
       }
@@ -319,7 +323,9 @@ export function spollers() {
               }, spollerSpeed);
 
           spollerTitle.classList.toggle("_spoller-active");
-          _slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
+          if (spollerTitle.nextElementSibling) {
+            _slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
+          }
 
           if (
             scrollSpoller &&
@@ -380,7 +386,9 @@ export function spollers() {
           ? parseInt(spollersBlock.dataset.spollersSpeed)
           : 500;
         spollerActiveTitle.classList.remove("_spoller-active");
-        _slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
+        if (spollerActiveTitle.nextElementSibling) {
+          _slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
+        }
         setTimeout(() => {
           spollerActiveBlock.open = false;
         }, spollerSpeed);

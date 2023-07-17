@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Редагування категорії"
+})
+<body>
+<div class="wrapper">
+    @@include('html/_header2.htm',{})
+    <main class="page">
+        <section class="admin">
+            <div class="admin__container">
+                <div class="admin__head">
+                    <h2 class="admin__title">
+                        Редагування категорії
+                    </h2>
+                </div>
+                <div class="admin-cor-cat">
+                    <div class="admin-cor-cat__row">
+                        <div class="admin-cor-cat__label">
+                            Забраження
+                        </div>
+                        <div class="admin-cor-cat__images">
+                            <label class="form-file__item">
+                                 <span class="form-file__plus-icon">
+                                <img src="@img/icons/load.svg" alt="">
+                            </span>
+                                <span class="form-file__text">
+                                Select a file or drag and
+drop here
+                            </span>
+                                <span class="form-file__link">
+                                Select file
+                            </span>
+                                <span class="form-file__remove">
+                                <img src="@img/icons/trash.svg" alt="">
+                            </span>
+                                <span class="form-file__preview-ibg">
+
+                                </span>
+                                <input accept="image/*" type='file' class="form-file__input"/>
+                            </label>
+                            <div class="admin-cor-cat__image-ibg">
+                                <img src="@img/main-img/01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-cor-cat__items">
+                        <div class="correct-item">
+                            <div class="correct-item__label">
+                                Назва UKR
+                            </div>
+                            <input type="text" placeholder="" value="Назва  UKR" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-item">
+                            <div class="correct-item__label">
+                                Назва RU
+                            </div>
+                            <input type="text" placeholder="" value="Назва RU" name="form"
+                                   class="input input_admin">
+                        </div>
+                        <div class="correct-item">
+                            <div class="correct-item__label">
+                                Батько
+                            </div>
+                            <select data-class-modif="admin" name="form[]" class="form">
+                                <option value="" selected>Новин</option>
+                                <option value="2">Новинки 1</option>
+                                <option value="3">Новинки 2</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="admin-cor-cat__button-wrap">
+                        <a href="" class="admin-cor-cat__button button button_admin">Зберегти</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>
