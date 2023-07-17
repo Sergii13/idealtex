@@ -4,11 +4,14 @@
   overflow-x: auto;
   overflow-y: hidden;
 
+  min-height: 300px;
+
   table {
     width: 100%;
     border-collapse: collapse;
     padding: 16px;
     min-width: 1110px;
+
 
     th, td {
       text-align: center;

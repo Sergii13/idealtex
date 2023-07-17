@@ -1,6 +1,60 @@
 .checkbox {
   position: relative;
 
+  &_admin {
+    .checkbox__label {
+      gap: 30px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .checkbox__circle {
+      height: 40px;
+      width: 90px;
+      flex-shrink: 0;
+      position: relative;
+      box-shadow: 0px 6px 8px 3px rgba(0, 0, 0, 0.10) inset;
+      background: rgba(50, 54, 87, 0.05);
+      border-radius: 25px;
+
+      &::after {
+        content: '';
+        filter: drop-shadow(-2px 1px 6px rgba(0, 0, 0, 0.25));
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 4px;
+        transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+        background: url('@img/icons/switch.svg') center/ 100% 100% no-repeat;
+      }
+    }
+
+    .checkbox__input:checked + .checkbox__label {
+      .checkbox__circle {
+        background: #76EE59;
+
+        &::after {
+          transform: translateX(50px);
+
+        }
+      }
+    }
+
+    .checkbox__text {
+      font-weight: 500;
+      line-height: 110.8%;
+      padding: 8px;
+      color: var(--primary);
+      border-bottom: 1px solid var(--grey);
+
+
+    }
+  }
+
   &_table {
     .checkbox__label {
       &::before {

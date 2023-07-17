@@ -151,7 +151,8 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.closest(".search-admin").classList.toggle("active-search-admin");
     } else if (
       !e.target.closest(".search-admin") &&
-      document.querySelector(".active-search-admin")
+      document.querySelector(".active-search-admin") &&
+      !e.target.closest(".flatpickr-calendar")
     ) {
       document
         .querySelector(".active-search-admin")
@@ -197,7 +198,7 @@ function check(btn, buttons) {
   );
   let offsetTop = btn.closest("td").offsetTop;
   let offsetBottom =
-    btn.closest("table").offsetHeight - btn.closest("td").offsetTop;
+    btn.closest(".table").offsetHeight - btn.closest("td").offsetTop;
   buttons.style.maxHeight =
     (offsetTop > offsetBottom ? offsetTop : offsetBottom) -
     btn.offsetHeight +
